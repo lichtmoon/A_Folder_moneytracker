@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/vallota-cryptocurrency-3146112_1920.png">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+ 
+</head>
+<body>
+         <div class="get-started-container" id="get-started-container">
+
+               <div class="faq">
+            <button class="how-btn" id="how-btn">?</button>
+                    </div>
+
+            <div class="how-modal" id="how-modal">
+    <div class="how-box">
+
+    <button class="close-how" id="close-how">×</button>
+
+    <span class="section-label">HOW IT WORKS</span>
+
+    <h3>Track your money expenses</h3>
+
+    <p>1. Choose your Account Card.</p>
+    <p>2. Select your Card.</p>
+    <p>3. Add your account balance, description, and expenses.</p>
+    <p>4. Check each card and updated Total.</p>
+    <p>5. Save and view it in History.</p>
+
+   </div>   
+   </div>
+
+
+            <div class="img-home">
+              <img src="img/vallota-cryptocurrency-3146112_1920.png" alt="">
+            </div>
+
+            <div class="name-title">
+            <h2>MONTRA</h2>
+            <p>Track.Spend.Balance.</p>
+            </div>
+            
+           <!--  <div class="center-text">
+        <p class="text">  Track your money in one simple place. Add accounts like <span class="gcash">gcash</span>, <span class="maya">maya</span>, or <span class="maribank">maribank</span>, update your balances, and see your total cash at a glance.</p>
+
+              </div> -->
+            
+            <div class="get-started-btn">
+              <button id="get-started">GET STARTED</button>
+            </div>
+
+             <footer class="footer">
+
+      <p>
+        &copy; Licht_moon | All Rights Reserved | JRSB
+      </p>
+
+    </footer>
+
+            </div>
+
+        <div class="money-container" id="money-container">
+
+            
+          <div class="heading">
+                  
+                   
+                  <img src="img/vallota-cryptocurrency-3146112_1920.png" alt="">
+               
+            <nav>
+                <a id="history-btn">History</a>
+                <a  id="settings-btn"><i class='bx bx-cog'></i></a>
+            </nav>
+         </div>
+            <div class="total-cash-container">
+              <p>Total Cash</p>
+              <h2 class="cash" id="cash">₱0.00</h2>
+            </div>
+
+            <div class="bank-card" id="bank-card">
+              <div class="card gcash-card" id="gcash-card" data-account = "Gcash">
+
+                   <div class="card-name">
+                    <p>GCash</p>
+                    <span class="gcash-icon">G</span>
+                    </div>
+
+                    <div class="chip">
+                    <img src="img/chip.png" alt="">
+                    </div>
+                    
+                    <span class="chip-span">1234 5678 9012 3456</span>
+
+                    <div class="gcash-box card-balance-box" id="gcash-box">
+                      <h2>₱0.00</h2>
+                    </div>
+                    
+              </div>
+
+               <div class="card maya-card" data-account = "maya">
+
+                   <div class="card-name">
+                    <span class="maya-icon">m</span>
+                    <p class="maya">maya</p>
+                    </div>
+                     <div class=" maya-chip">
+                    <img src="img/chip.png" alt="">
+                    </div>
+                      
+                      <div class=" maya-box card-balance-box">
+                    <h2>₱0.00</h2>
+                     </div>
+
+                     <h2 class="display-maya">m</h2>
+              </div>
+          
+
+
+               <div class="card gotyme-card" data-account = "GOtyme">
+
+                   <div class="card-name" >
+                    <p>VISA</p>
+                    <span class="wifi-icon"><i class='bx bx-wifi'></i></span>
+                    </div>
+
+                      <div class=" gotyme-chip">
+                    <img src="img/chip.png" alt="">
+                    </div>
+
+                  
+                    <h2 class="display-gotyme">GOtyme</h2>
+                   
+                    <div class="gotyme-box card-balance-box">
+                    <h2>₱0.00</h2>
+                     </div>
+              </div>
+
+                <div class="card maribank-card" data-account = "MariBank">
+
+                   <div class="card-name">
+                    <div class="maribank-p-div">
+                        <span>M</span>
+                    </div>
+                    <span><i class='bx bx-smile'></i></span>
+                    </div>
+
+                  <h2 class="maribank-logo">MariBank</h2>
+                    
+                    <div class="maribank-box card-balance-box">
+                    <h2>₱0.00</h2>
+                     </div>
+              </div>
+
+                <div class="card tonik-card" data-account = "tonik">
+
+                   <div class="card-name">
+                    <p>tonik</p>
+                    <span debit-span>DEBIT</span>
+                    </div>
+
+                   
+                    <div class="tonik-box card-balance-box">
+                    <h2>₱0.00</h2>
+                     </div>
+                      <div class="circle">
+                     <div class="circle-left"></div>
+                     <div class="circle-right"> </div>
+                     </div>
+              </div>
+
+
+                <div class="card cash-card" data-account = "Cash">
+
+                   <div class="card-name">
+                    <p>Cash</p>
+                    <span><i class='bx bx-money'></i></span>
+                    </div>
+
+                      <div class="money-img">
+                        <img src="img/money.png" alt="">
+                      </div>
+                    <div class="cash-box card-balance-box">
+                    <h2>₱0.00</h2>
+                     </div>
+              </div>
+
+               </div>
+
+                  <div class="add-bank-btn">
+                    <button>+</button>
+                  </div>
+
+
+
+                  
+                <div class="settings-sidebar" id="settings-sidebar">
+    <div class="settings-header">
+    <h2>Settings</h2>       
+    <span><i class='bx bx-cog'></i></span>
+    </div>
+    
+      <div class="settings-section">
+  <h3>Data</h3>
+   
+  <button id="clear-history">Clear History</button>
+  <button id="reset-all-data">Reset All Data</button>
+  
+      </div> 
+      
+      <div class="settings-section">
+          <h3>About</h3>
+
+        <p>Money Tracker</p>
+        <p>Version 1.0</p>
+      </div>
+</div>
+
+          <div class="confirm-popup" id="confirm-popup">
+            <h3 class="clear-history-h2 clear-all-data">Clear History?</h3>
+            <p class="delete-history delete-all-data">This will delete all transaction history.</p>
+
+            <button class="delete-confirmation delete-data-confirmation" id="btn-yes-color">Delete</button>
+            
+            <button class="cancel-delete-confirmation" >Cancel</button>
+          </div>
+
+
+         
+    <footer class="footer">
+
+      <p>
+        &copy; Licht_moon | All Rights Reserved | JRSB
+      </p>
+
+    </footer>
+
+                 </div>
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   <div class="popup-container" id="popup-container">
+                <div class="img-logo">
+                   <img src="img/vallota-cryptocurrency-3146112_1920.png" alt="">
+            </div>
+
+                <div class="popup-header">
+                  <h2 class="account-name" id="account-name"></h2>
+                  <span id="popup-remove">X</span>
+                </div>
+
+                  <div class="balance-section">
+                <label for="current-balance" class="balance-section-label">Current balance</label>
+                <input type="number" placeholder="₱0.00 " id="current-balance">
+                <p class="alert-2" id="alert-2"></p>
+                    <div class="btn">
+                  <button class="edit-balance" id="edit-balance">Edit</button>
+                  </div>
+                   </div>
+
+                   <div class="divider"></div>
+
+                <label for="description" class="popup-container-label">Description</label>
+                <input type="text" placeholder="what did you spend on?" id="description">
+
+                <label for="amount" class="popup-container-label">Amount</label>
+                <input type="number" placeholder="₱0.00 " id="amount">
+                <p class="alert" id="alert"></p>
+                 
+                <div class="btn">
+                  <button class="cancel" id="cancel-btn">Cancel</button>
+                  <button class="save" id="save-btn">Save</button>
+                </div>
+
+
+
+
+                   
+
+
+                 <!--  <div class="history-container">
+                    <div class="heading">
+                      <h2>History Transaction</h2>
+                      <span>X</span>
+                    </div>
+                    <div class="history-box" id="history-box">
+                        <p class="account-name-history" id="account-name-history"></p>
+                       <p class="current-balance-history" id="current-balance-history">Current Balance:</p>
+
+                       <p class="description-history" id="description-history">Description:</p>
+
+                       <p class="expense-history" id="expense-history">Expense:</p>
+
+                       <p class="updated-balance-history" id="updated-balance-history">Updated Balance:</p>
+                    </div>
+                    
+                  </div> -->
+
+
+        
+</div>
+
+                  
+
+                  <div class="history-container" id="history-container">
+                    <div class="heading-history">
+                      <button class="dropdown-menu"><i class='bx bx-menu'></i></button>
+                      <div class="history-heading-div">
+                      <h2>Transaction</h2>
+                      </div>
+                      <span id="remove-history">X</span>
+                    </div>
+
+                  <table>
+                    <thead class="thead">
+                      <tr>
+                        <th>Account</th>
+                        <th>Current Balance</th>
+                        <th>Description</th>
+                        <th>Expense</th>
+                        <th>Updated Balance</th>
+                      </tr>
+                    </thead>
+
+                    <tbody id="history-body">
+                        
+                    </tbody>
+                  </table>
+
+                   <footer class="footer">
+
+      <p>
+        &copy; Licht_moon | All Rights Reserved | JRSB
+      </p>
+
+    </footer>
+            
+                   </div>
+            
+
+      <!--               <template id="credit-card-template">
+    <div class="card credit-card">
+        <h3>Credit Card</h3>
+
+        <div class="card-number">
+            **** **** **** ****
+        </div>
+
+        <div class="card-balance-box">
+            <h2>₱0.00</h2>
+        </div>
+    </div>
+</template> -->
+
+
+
+
+
+
+
+
+
+
+
+
+        
+     
+
+  
+
+  <script src="index.js"></script>
+</body>
+</html>

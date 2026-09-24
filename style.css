@@ -1,0 +1,3689 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+font-family: 'Poppin', sans-serif;
+text-decoration: none;
+list-style: none;
+
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+} 
+
+
+.heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.h2{
+ padding: 10px;
+  background-color: rgb(45, 165, 9);
+  border: none;
+  border-radius: 100px 1px;
+  color: white;
+  box-shadow: 0 7px 0 rgb(1, 53, 1);
+  position: relative;
+  margin: 10px;
+}
+
+/* .h2::after{
+  content: "";
+  border-bottom: 1px solid rgb(45, 165, 9);
+  border-left: 1px solid rgb(45, 165, 9);
+  border-right: 1px solid rgb(45, 165, 9);
+  height: 5px;
+  width: 50%;
+  position: absolute;
+  background-color: rgb(45, 165, 9);
+  top: 0;
+  right: -40px;
+
+} */
+
+.heading h2 {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  margin: 10px;
+ 
+}
+
+.heading nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 0;
+
+}
+
+.heading a{
+    background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+    color: rgb(108, 105, 105);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+     padding: 5px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.heading a:active{
+  box-shadow: 0 0 20px rgb(108, 105, 105);
+  transform: translateY(-3px);
+}
+
+.heading img{
+  width: 100px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgb(214, 101, 1);
+}
+
+.money-container{
+   background-image:
+    linear-gradient(
+      rgba(1, 1, 26, 0.78),
+      rgba(5, 5, 5, 0.94)
+    ),
+    url("img/thedigitalartist-business-8256837_1920.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 20px;
+  min-height: 100dvh;
+  width: 100%;
+  max-width: 550px;
+  position: relative;
+
+}
+
+.title{
+  font-size: 2rem;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.total-cash-container{
+  border: none;
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+    color: rgb(171, 169, 169);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  border-radius: 1rem;
+  min-height: 170px;
+}
+
+.total-cash-container p{
+  color: #d2cccc;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.total-cash-container h2{
+  font-size: 2rem;
+}
+
+/* ................ */
+
+.bank-card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top:10px ;
+
+}
+
+.card{
+  width: 100%;
+  background-color: rgb(16, 16, 20);
+  padding: 10px 10px;
+  border: none;
+  border-radius: 1rem;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.card:active{
+  transform: translateY(-3px);
+}
+
+.card-name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.gcash-icon{
+   width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #2107b2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.chip{
+  position: absolute;
+  top: 25px;
+  left: -2px;
+  font-size: 8px;
+}
+
+
+
+.chip img{
+  width: 80px;
+ 
+}
+
+.chip-span {
+color: #a19d9d;
+position: absolute;
+top: 70px;
+left: 10px;
+}
+
+.card p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  
+}
+
+.card span{
+  font-size: 1rem;
+   margin-bottom: 10px;
+
+}
+
+
+
+.gcash-box{
+  background: #120c36;
+  border-radius: 20px;
+  margin-top: 4rem;
+  text-align: center;
+
+}
+
+
+
+
+
+.add-bank-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+} 
+
+.add-bank-btn button{
+  /* padding: 6px;
+   background: linear-gradient(rgb(88, 38, 2), rgb(246, 97, 4));
+  border: none;
+  font-size: 12px;
+  border-radius: 1px 100px;
+  color: rgb(251, 251, 251);
+  box-shadow: 0 3px 0 rgb(245, 119, 1);
+  position: relative; */
+    background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+    color: rgb(171, 169, 169);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+     padding: 5px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    font-size: 1.5rem;
+}
+
+/* .add-bank-btn button::before{
+  content: "";
+  position: absolute;
+  
+  border-bottom: 1px solid rgb(45, 165, 9);
+  border-top: 1px solid rgb(45, 165, 9);
+  border-left: 1px solid rgb(45, 165, 9);
+  background: rgb(45, 165, 9);
+  top: 0;
+  right: -30px;
+  height: 3px;
+  width: 30%;
+} */
+
+.gcash-card{
+background: #1b0d6c;
+transition: 0.3s ease-in-out;
+cursor: pointer;
+}
+
+.gcash-card:hover{
+transform: translateY(-3px);
+box-shadow: 0 0 5px #280bcd;
+}
+
+ .gcash-card:active{
+  transform: translateY(-3px);
+  box-shadow: 0 0 5px  #443597;  
+} 
+
+
+
+
+.maya-card {
+  background: linear-gradient(rgb(19, 19, 19), rgb(6, 6, 6));
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.maya-card:hover{
+   box-shadow: 0 2px 10px rgb(13, 151, 98);
+   transform: translateY(-3px);
+}
+
+ .maya-card:active{
+   box-shadow: 0 2px 10px rgb(13, 151, 98);
+   transform: translateY(-3px);
+} 
+
+
+.maya-card p {
+  color: rgb(13, 151, 98);
+  font-weight: bold;
+}
+
+.maya-icon{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgb(3, 75, 47);
+  text-align: center;
+}
+
+.maya-box{
+  background-color: rgb(2, 23, 15);
+  border-radius: 20px;
+  margin-top: 4rem;
+  text-align: center;
+  
+}
+
+
+
+.maya-card .maya-p{
+  font-size: 10px;
+  color: white;
+}
+
+ .maya-chip{
+  position: absolute;
+  left: 2px;
+  top: 40px;
+
+} 
+
+.maya-chip img{
+  width: 80px;
+}
+.display-maya{
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  font-size: 3rem;
+  opacity: .2;
+  font-weight: bold;
+}
+
+
+.maribank-card{
+  background: linear-gradient( rgb(251, 88, 0),orange, rgb(244, 71, 2));
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.maribank-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px orangered;
+}
+
+.maribank-p-div{
+  height: 30px;
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.maribank-p-div span {
+ align-items: center;
+ margin-top: 5px;
+ border: 1px solid orange;
+ border-radius: 50%;
+ height:  20px;
+ width: 20px;
+ padding: 2px;
+ color: orangered;
+ background-color: white;
+ 
+}
+
+ .maribank-logo{
+    position: absolute;
+    bottom: 50px;
+    text-spacing-trim: 1rem;
+    font-size: 2rem;  
+    text-shadow: 0 3px 0 black;
+} 
+
+
+.maribank-box{
+  position: absolute;
+  bottom: 10px;
+  left: 7px;
+  width: 90%;
+  border-radius: 20px;
+  background-color: rgb(184, 34, 3);
+   text-align: center;
+
+}
+
+
+
+
+
+ .gotyme-card{
+ background: linear-gradient(180deg, black, rgb(75, 217, 227));
+ cursor: pointer;
+ transition: 0.3s ease-in-out;
+} 
+
+.gotyme-card:hover{
+  box-shadow: 0 0 20px rgb(75, 217, 227);
+  transform: translateY(-3px);
+}
+
+.wifi-icon {
+  transform: rotate(90deg);
+  
+}
+
+
+.gotyme-chip{
+  position: absolute;
+  top: 15px;
+  left: 60px;
+}
+
+.gotyme-chip img{
+  width: 60px;
+}
+
+.display-gotyme {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  color: rgb(1, 41, 44);
+  text-shadow: 0 2px 0 rgb(12, 10, 26);
+  font-size: 2rem;
+
+  
+}
+
+.gotyme-box{
+  background-color:rgb(1, 41, 44);
+  border-radius: 20px;
+  margin-top: 4rem;
+   text-align: center;
+}
+
+
+
+
+.tonik-card{
+  background: linear-gradient(to right, rgb(67, 3, 156),rgb(102, 5, 239) );
+  cursor: pointer;
+  transition: 3s ease-in-out;
+}
+
+.tonik-card:hover{
+  box-shadow: 0 0 20px rgb(102, 5, 239) ;
+  transform: translateY(-3px);
+}
+
+.tonik-card span{
+  font-size: 12px;
+}
+
+.circle{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 5px;
+  bottom: 45px;
+}
+.circle-left{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.circle-right{
+  position: absolute;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: orange;
+  
+}
+
+.tonik-box{
+  border-radius: 20px;
+  background-color: #231d48;
+  margin-top: 4rem;
+   text-align: center;
+}
+
+
+
+
+.cash-card{
+  background: linear-gradient(135deg, green, black);
+  cursor: pointer;
+  transition: 3s ease-in-out;
+}
+
+.cash-card:hover{
+  transform: translateY(-3px);
+
+}
+.money-img{
+  position: absolute;
+  top: 30px;
+  left: 50px;
+ 
+}
+.money-img img{
+  width: 70px;
+
+}
+
+.cash-box{
+  margin-top: 4rem;
+  border-radius: 20px;
+  background-color: rgb(4, 60, 4);
+  text-align: center;
+
+}
+
+.cash-box h2,
+.gcash-box h2,
+.maya-box h2,
+.tonik-box h2,
+.maribank-box h2,
+.gotyme-box h2{
+  font-size: 12px;
+}
+
+
+
+
+/* Pop up */
+
+.popup-container{
+  width: 100%;
+  max-width:500px;
+  color: white;
+  background-image:
+    linear-gradient(
+      rgba(1, 1, 26, 0.78),
+      rgba(5, 5, 5, 0.94)
+    ),
+    url("img/thedigitalartist-finance-8045002_1920.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 10px 20px;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 28%;
+  
+}
+
+.img-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.img-logo img{
+  width: 80px;
+    border: none;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgb(214, 101, 1);
+}
+
+
+
+.popup-header{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.popup-header h2, .popup-header span{
+  padding: 5px;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.popup-header span{
+  font-size: 1rem;
+}
+
+.balance-section-label{
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-balance{
+  border: none;
+  background-color: white;
+  padding: 10px 30px;
+  color: #777;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.edit-balance:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgb(207, 206, 205);
+    background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+;
+  
+  
+}
+
+.edit-balance:active{
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgb(191, 190, 190);
+    background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+      color: #d2cccc;
+}
+
+
+/*  */
+
+.popup-container-label{
+  color: #777;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.popup-container input{
+ 
+  border: 1px solid gray;
+   padding: 10px ;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.popup-container input:focus{
+  border-color: rgb(235, 125, 8);
+}
+
+
+
+.btn {
+  display: flex;
+  justify-content: right;
+  gap: 1.5rem;
+  margin: 10px;
+}
+
+.btn button{
+  padding: 10px ;
+  border-radius: 10px;
+  border: none;
+}
+
+.cancel{
+  
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.cancel:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgb(246, 139, 9);
+   background: linear-gradient(rgb(175, 112, 4), black);
+}
+
+.save{
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.save:hover{
+   transform: translateY(-3px);
+  box-shadow: 0 0 20px rgb(246, 139, 9);
+   background: linear-gradient(rgb(175, 112, 4), black);
+}
+
+
+.divider{
+  border-bottom: 1px solid red;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.popup-container{
+  display: none;
+}
+
+.popup-container.show{
+  display: flex;
+}
+
+
+
+/* @media(max-width: 600px) { */
+  .history-container{
+    min-height: 100dvh;
+    width: 100%;
+    max-width: 550px;
+    padding: 10px;
+    background-image:
+    linear-gradient(
+      rgba(5, 5, 5, 0.78),
+      rgba(5, 5, 5, 0.94)
+    ),
+    url("img/global_intergold-gold-is-money-2020767_1920.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    color: #777;
+    display: none;
+  }
+
+.heading-history{
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  box-shadow:  inset 0 1px rgba(255, 255, 255, 0.04);
+   font-size: 15px;
+}
+
+.heading-history span{
+  margin-top: 3px;
+}
+
+.dropdown-menu{
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: #777;
+
+}
+.dropdown-menu:hover{
+  transform: translateY(-3px);
+
+}
+
+
+
+.thead tr{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%; 
+  padding: 10px;
+  margin-top: 10px;
+  background: rgba(15, 15, 15, 0.92); 
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  box-shadow:  inset 0 1px rgba(255, 255, 255, 0.04);
+   font-size: 13px;
+}
+
+#history-body tr{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%; 
+  padding: 10px;
+  margin-top: 5px;
+  
+  background: rgba(15, 15, 15, 0.92); 
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 13px;
+  box-shadow:  inset 0 1px rgba(255, 255, 255, 0.04);
+ font-size: 13px;
+}
+
+#history-body tr td{
+  text-align: center;
+}
+
+
+
+
+.history-container{
+  display: none;
+}
+.history-container.show{
+  display: block;
+}
+
+
+.money-container{
+  display: none;
+}
+
+ .money-container.show{
+  display: block;
+} 
+
+nav a{
+  cursor: pointer;
+  transition: 0.3s ease;
+  
+}
+
+nav a:active{
+  border: 1px solid rgb(233, 165, 116);
+   border: 1px solid rgb(236, 122, 8);
+  border-radius: 10px;
+  padding: 5px; 
+}
+
+
+/* } */
+
+.get-started-container{
+  width: 100%;
+  min-height: 100dvh;
+  background-image:
+    linear-gradient(
+      rgba(1, 1, 26, 0.78),
+      rgba(5, 5, 5, 0.94)
+    ),
+    url("img/thedigitalartist-business-8256837_1920.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.name-title h2{
+  margin-top: 3rem;
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(220, 220, 220);
+  text-shadow: 0 0 8px rgb(230, 148, 7);
+  font-weight: bold;
+}
+
+.name-title p{
+  font-style: italic;
+  color: rgb(232, 168, 6);
+  
+}
+
+.faq{
+ position: absolute;
+ right: 10px;
+ top: 10px;
+}
+
+.how-btn{
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  border: 1px solid #d2cccc;
+  color: #d2cccc;
+  background: transparent;
+
+}
+
+.img-home img{
+  width: 320px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgb(214, 101, 1);
+}
+
+.img-home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+/* .center-text{
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left;
+} */
+.text {
+     width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  margin-top: 2rem;
+  color: #777;
+  line-height: 1.7;
+}
+
+
+
+
+#get-started{
+  padding: 10px 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  color: rgb(186, 122, 4);
+  background-color: black;
+  margin-top: 1.5rem;
+}
+
+.section-label{
+  color: rgb(202, 133, 5);
+}
+
+.how-modal {
+  display: none;
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 1000;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.how-modal.show {
+  display: flex;
+}
+
+.how-box {
+  position: relative;
+
+  width: 100%;
+  max-width: 350px;
+
+  padding: 25px 20px;
+
+  background: #111;
+
+  border: 1px solid rgba(200, 103, 7, 0.2);
+
+  border-radius: 18px;
+
+  text-align: left;
+}
+
+.how-box h3 {
+  margin: 8px 0 15px;
+
+  color: #f5f5f5;
+}
+
+.how-box p {
+  margin: 8px 0;
+
+  color: #999;
+
+  font-size: 13px;
+}
+
+.close-how {
+  position: absolute;
+
+  top: 12px;
+  right: 15px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #777;
+
+  font-size: 24px;
+
+  cursor: pointer;
+}
+
+.close-how:hover {
+  color: #ffaf02;
+}
+
+.get-started-container.hide{
+  display: none;
+}
+
+
+.settings-sidebar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100dvh;
+  width:100dvh ;
+  max-width: 150px;
+  background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transform: translateX(-100%);
+
+}
+
+.settings-sidebar.show{
+    transform: translateX(0);
+
+}
+
+.settings-header{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: transparent;
+  background: linear-gradient(rgb(247, 158, 5));
+  background-clip: text;
+}
+
+.settings-section{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.settings-section h3{
+  color: transparent;
+  background: linear-gradient(rgb(228, 118, 7), rgb(248, 127, 5));
+  background-clip: text;
+}
+
+.settings-section p{
+    margin-left: 10px;
+  }
+
+
+.settings-section button{
+  width: fit-content;
+  margin: 0;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+ background: linear-gradient(
+    135deg,
+    rgba(233, 233, 236, 0.35),
+    rgba(0, 0, 0, 0.25)
+);
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: #fafafa;
+}
+
+.settings-section button:hover{
+transform: translateY(-3px);
+}
+
+
+
+
+.confirm-popup{
+    background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+     max-width:300px;
+    padding: 10px;
+   display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 10px;
+    height: 200px;
+    position: fixed;
+    left: 15%;
+    top: 30%;
+     justify-content: center;
+     align-items: center;
+     display: none;
+}
+
+.confirm-popup.show{
+  display: flex;
+}
+
+
+.confirm-popup button{
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: black;
+    background: transparent;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.confirm-popup button:active{
+transform: translateY(-3px);
+box-shadow: 0 0 5px rgba(255, 255, 255, 0.18);
+}
+
+.confirm-popup button:hover{
+transform: translateY(-3px);
+box-shadow: 0 0 5px rgba(255, 255, 255, 0.18);
+background-color: black;
+}
+
+
+.confirm-popup #btn-yes-color{
+  background-color: red;
+}
+
+
+.gcash{
+  color: #2b0ae4;
+}
+.maya{
+  color: rgb(9, 233, 125);
+}
+
+
+
+.footer {
+   position: fixed; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 5px;
+}
+
+.footer p {
+  font-size: 0.75rem;
+
+  color: transparent;
+
+  background: linear-gradient(white, black);
+
+  background-clip: text;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-height:700px) {
+ 
+.heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.h2{
+ padding: 10px;
+  background-color: rgb(45, 165, 9);
+  border: none;
+  border-radius: 100px 1px;
+  color: white;
+  box-shadow: 0 7px 0 rgb(1, 53, 1);
+  position: relative;
+  margin: 10px;
+}
+
+/* .h2::after{
+  content: "";
+  border-bottom: 1px solid rgb(45, 165, 9);
+  border-left: 1px solid rgb(45, 165, 9);
+  border-right: 1px solid rgb(45, 165, 9);
+  height: 5px;
+  width: 50%;
+  position: absolute;
+  background-color: rgb(45, 165, 9);
+  top: 0;
+  right: -40px;
+
+} */
+
+.heading h2 {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  margin: 10px;
+ 
+}
+
+.heading nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 0;
+
+}
+
+.heading a{
+    background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+    color: rgb(108, 105, 105);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+     padding: 5px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.heading a:active{
+  box-shadow: 0 0 20px rgb(108, 105, 105);
+  transform: translateY(-3px);
+}
+
+.heading img{
+  width: 90px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgb(214, 101, 1);
+}
+
+.money-container{
+   background-image:
+    linear-gradient(
+      rgba(1, 1, 26, 0.78),
+      rgba(5, 5, 5, 0.94)
+    ),
+    url("img/thedigitalartist-business-8256837_1920.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 10px;
+  min-height: 100dvh;
+  width: 100%;
+  max-width: 550px;
+  position: relative;
+
+}
+
+.title{
+  font-size: 2rem;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.total-cash-container{
+  border: none;
+    background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+    color: rgb(171, 169, 169);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  border-radius: 1rem;
+  min-height: 140px;
+}
+
+.total-cash-container p{
+  color: #d2cccc;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.total-cash-container h2{
+  font-size: 2rem;
+}
+
+/* ................ */
+
+.bank-card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top:10px ;
+
+}
+
+.card{
+  width: 100%;
+  height: 100px;
+  border: none;
+  border-radius: 1rem;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.card:active{
+  transform: translateY(-3px);
+}
+
+.card-name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gcash-icon{
+   width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #2107b2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.chip{
+  position: absolute;
+  top: 25px;
+  left: -2px;
+  font-size: 8px;
+}
+
+
+
+.chip img{
+  width: 60px;
+ 
+}
+
+.chip-span {
+color: #a19d9d;
+position: absolute;
+top: 55px;
+left: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  
+}
+
+.card span{
+  font-size: 12px;
+   margin-bottom: 10px;
+
+}
+
+
+
+.gcash-box{
+  background: #120c36;
+  border-radius: 20px;
+  margin-top: 2.5rem;
+  text-align: center;
+
+}
+
+
+
+
+
+.add-bank-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+} 
+
+.add-bank-btn button{
+  /* padding: 6px;
+   background: linear-gradient(rgb(88, 38, 2), rgb(246, 97, 4));
+  border: none;
+  font-size: 12px;
+  border-radius: 1px 100px;
+  color: rgb(251, 251, 251);
+  box-shadow: 0 3px 0 rgb(245, 119, 1);
+  position: relative; */
+    background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+    color: rgb(171, 169, 169);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+     padding: 5px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    font-size: 1.2rem;
+}
+
+/* .add-bank-btn button::before{
+  content: "";
+  position: absolute;
+  
+  border-bottom: 1px solid rgb(45, 165, 9);
+  border-top: 1px solid rgb(45, 165, 9);
+  border-left: 1px solid rgb(45, 165, 9);
+  background: rgb(45, 165, 9);
+  top: 0;
+  right: -30px;
+  height: 3px;
+  width: 30%;
+} */
+
+.gcash-card{
+background: #1b0d6c;
+transition: 0.3s ease-in-out;
+cursor: pointer;
+}
+
+.gcash-card:hover{
+transform: translateY(-3px);
+box-shadow: 0 0 5px #280bcd;
+}
+
+ .gcash-card:active{
+  transform: translateY(-3px);
+  box-shadow: 0 0 5px  #443597;  
+} 
+
+
+
+
+.maya-card {
+  background: linear-gradient(rgb(19, 19, 19), rgb(6, 6, 6));
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.maya-card:hover{
+   box-shadow: 0 2px 10px rgb(13, 151, 98);
+   transform: translateY(-3px);
+}
+
+ .maya-card:active{
+   box-shadow: 0 2px 10px rgb(13, 151, 98);
+   transform: translateY(-3px);
+} 
+
+
+.maya-card p {
+  color: rgb(13, 151, 98);
+  font-weight: bold;
+}
+
+.maya-icon{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgb(3, 75, 47);
+  text-align: center;
+}
+
+.maya-box{
+  background-color: rgb(2, 23, 15);
+  border-radius: 20px;
+margin-top: 2.5rem;
+  text-align: center;
+  
+}
+
+
+
+.maya-card .maya-p{
+  font-size: 10px;
+  color: white;
+}
+
+ .maya-chip{
+  position: absolute;
+  left: 2px;
+  top: 30px;
+
+} 
+
+.maya-chip img{
+  width: 60px;
+}
+.display-maya{
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  font-size: 3rem;
+  opacity: .2;
+  font-weight: bold;
+}
+
+
+.maribank-card{
+  background: linear-gradient( rgb(251, 88, 0),orange, rgb(244, 71, 2));
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.maribank-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px orangered;
+}
+
+.maribank-p-div{
+  height: 30px;
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.maribank-p-div span {
+ align-items: center;
+ margin-top: 5px;
+ border: 1px solid orange;
+ border-radius: 50%;
+ height:  20px;
+ width: 20px;
+ padding: 2px;
+ color: orangered;
+ background-color: white;
+
+ 
+}
+
+ .maribank-logo{
+    position: absolute;
+    bottom: 30px;
+    text-spacing-trim: 1rem;
+    font-size: 1.5rem;  
+    text-shadow: 0 3px 0 black;
+     letter-spacing:4px ;
+} 
+
+
+.maribank-box{
+  position: absolute;
+  bottom: 2px;
+  left: 7px;
+  width: 90%;
+  border-radius: 20px;
+  background-color: rgb(184, 34, 3);
+   text-align: center;
+
+}
+
+
+
+
+
+ .gotyme-card{
+ background: linear-gradient(180deg, black, rgb(75, 217, 227));
+ cursor: pointer;
+ transition: 0.3s ease-in-out;
+} 
+
+.gotyme-card:hover{
+  box-shadow: 0 0 20px rgb(75, 217, 227);
+  transform: translateY(-3px);
+}
+
+.wifi-icon {
+  transform: rotate(90deg);
+  
+}
+
+
+.gotyme-chip{
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+
+.gotyme-chip img{
+  width: 60px;
+}
+
+.display-gotyme {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  color: rgb(1, 41, 44);
+  text-shadow: 0 2px 0 rgb(12, 10, 26);
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+
+  
+}
+
+.gotyme-box{
+  background-color:rgb(1, 41, 44);
+  border-radius: 20px;
+  margin-top: 2.9rem;
+   text-align: center;
+}
+
+
+
+
+.tonik-card{
+  background: linear-gradient(to right, rgb(67, 3, 156),rgb(102, 5, 239) );
+  cursor: pointer;
+  transition: 3s ease-in-out;
+}
+
+.tonik-card:hover{
+  box-shadow: 0 0 20px rgb(102, 5, 239) ;
+  transform: translateY(-3px);
+}
+
+.tonik-card span{
+  font-size: 12px;
+}
+
+.circle{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 5px;
+  bottom: 40px;
+}
+.circle-left{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.circle-right{
+  position: absolute;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: orange;
+  
+}
+
+.tonik-box{
+  border-radius: 20px;
+  background-color: #231d48;
+  margin-top: 2.9rem;
+   text-align: center;
+}
+
+
+
+
+.cash-card{
+  background: linear-gradient(135deg, green, black);
+  cursor: pointer;
+  transition: 3s ease-in-out;
+}
+
+.cash-card:hover{
+  transform: translateY(-3px);
+
+}
+.money-img{
+  position: absolute;
+  top: 15px;
+  left: 50px;
+ 
+}
+.money-img img{
+  width: 60px;
+
+}
+
+.cash-box{
+  margin-top: 2.9rem;
+  border-radius: 20px;
+  background-color: rgb(4, 60, 4);
+  text-align: center;
+
+}
+
+.cash-box h2,
+.gcash-box h2,
+.maya-box h2,
+.tonik-box h2,
+.maribank-box h2,
+.gotyme-box h2{
+  font-size: 12px;
+}
+
+
+
+
+/* Pop up */
+
+.popup-container{
+  width: 100%;
+  max-width:350px;
+  color: white;
+  background-image:
+    linear-gradient(
+      rgba(1, 1, 26, 0.78),
+      rgba(5, 5, 5, 0.94)
+    ),
+    url("img/thedigitalartist-finance-8045002_1920.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 10px 20px;
+  flex-direction: column;
+  position: fixed;
+  left: 20px;
+  top: 10%;
+  
+  
+}
+
+.img-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.img-logo img{
+  width: 80px;
+    border: none;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgb(214, 101, 1);
+}
+
+
+
+.popup-header{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.popup-header h2, .popup-header span{
+  padding: 5px;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.popup-header span{
+  font-size: 1rem;
+}
+
+.balance-section-label{
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-balance{
+  border: none;
+  background-color: white;
+  padding: 10px 30px;
+  color: #777;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.edit-balance:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgb(207, 206, 205);
+    background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+;
+  
+  
+}
+
+.edit-balance:active{
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgb(191, 190, 190);
+    background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+      color: #d2cccc;
+}
+
+
+/*  */
+
+.popup-container-label{
+  color: #777;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.popup-container input{
+ 
+  border: 1px solid gray;
+   padding: 10px ;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.popup-container input:focus{
+  border-color: rgb(235, 125, 8);
+}
+
+
+
+.btn {
+  display: flex;
+  justify-content: right;
+  gap: 1.5rem;
+  margin: 10px;
+}
+
+.btn button{
+  padding: 10px ;
+  border-radius: 10px;
+  border: none;
+}
+
+.cancel{
+  
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.cancel:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgb(246, 139, 9);
+   background: linear-gradient(rgb(175, 112, 4), black);
+}
+
+.save{
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.save:hover{
+   transform: translateY(-3px);
+  box-shadow: 0 0 20px rgb(246, 139, 9);
+   background: linear-gradient(rgb(175, 112, 4), black);
+}
+
+
+.divider{
+  border-bottom: 1px solid red;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.popup-container{
+  display: none;
+}
+
+.popup-container.show{
+  display: flex;
+}
+
+
+
+/* @media(max-width: 600px) { */
+  .history-container{
+    min-height: 100dvh;
+    width: 100%;
+    max-width: 550px;
+    padding: 10px;
+    background-image:
+    linear-gradient(
+      rgba(5, 5, 5, 0.78),
+      rgba(5, 5, 5, 0.94)
+    ),
+    url("img/global_intergold-gold-is-money-2020767_1920.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    color: #777;
+    display: none;
+  }
+
+.heading-history{
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  box-shadow:  inset 0 1px rgba(255, 255, 255, 0.04);
+   font-size: 15px;
+}
+
+.heading-history span{
+  margin-top: 3px;
+}
+
+.dropdown-menu{
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: #777;
+
+}
+.dropdown-menu:hover{
+  transform: translateY(-3px);
+
+}
+
+
+
+.thead tr{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%; 
+  padding: 10px;
+  margin-top: 10px;
+  background: rgba(15, 15, 15, 0.92); 
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  box-shadow:  inset 0 1px rgba(255, 255, 255, 0.04);
+   font-size: 13px;
+}
+
+#history-body tr{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%; 
+  padding: 10px;
+  margin-top: 5px;
+  
+  background: rgba(15, 15, 15, 0.92); 
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 13px;
+  box-shadow:  inset 0 1px rgba(255, 255, 255, 0.04);
+ font-size: 13px;
+}
+
+#history-body tr td{
+  text-align: center;
+}
+
+
+
+
+.history-container{
+  display: none;
+}
+.history-container.show{
+  display: block;
+}
+
+
+.money-container{
+  display: none;
+}
+
+ .money-container.show{
+  display: block;
+} 
+
+nav a{
+  cursor: pointer;
+  transition: 0.3s ease;
+  
+}
+
+nav a:active{
+  border: 1px solid rgb(233, 165, 116);
+   border: 1px solid rgb(236, 122, 8);
+  border-radius: 10px;
+  padding: 5px; 
+}
+
+
+/* } */
+
+.maribank{
+  color: rgb(249, 118, 70);
+}
+
+.get-started-container{
+  width: 100%;
+  min-height: 100dvh;
+  background-image:
+    linear-gradient(
+      rgba(1, 1, 26, 0.78),
+      rgba(5, 5, 5, 0.94)
+    ),
+    url("img/thedigitalartist-business-8256837_1920.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.name-title h2{
+  margin-top: 2rem;
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(220, 220, 220);
+  text-shadow: 0 0 8px rgb(230, 148, 7);
+  font-weight: bold;
+}
+
+.name-title p{
+  font-style: italic;
+  color: rgb(232, 168, 6);
+  
+}
+
+.faq{
+ position: absolute;
+ right: 10px;
+ top: 10px;
+}
+
+.how-btn{
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  border: 1px solid #d2cccc;
+  color: #d2cccc;
+  background: transparent;
+
+}
+
+.img-home img{
+  width: 250px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgb(214, 101, 1);
+}
+
+.img-home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+/* .center-text{
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left;
+} */
+.text {
+     width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  margin-top: 1.5rem;
+  color: #777;
+  line-height: 1.5;
+}
+
+
+.get-started-btn {
+  margin-top: 1.3rem;
+}
+
+#get-started{
+  padding: 10px 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  color: rgb(186, 122, 4);
+  background-color: black;
+}
+
+.section-label{
+  color: rgb(202, 133, 5);
+}
+
+.how-modal {
+  display: none;
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 1000;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.how-modal.show {
+  display: flex;
+}
+
+.how-box {
+  position: relative;
+
+  width: 100%;
+  max-width: 350px;
+
+  padding: 25px 20px;
+
+  background: #111;
+
+  border: 1px solid rgba(200, 103, 7, 0.2);
+
+  border-radius: 18px;
+
+  text-align: left;
+}
+
+.how-box h3 {
+  margin: 8px 0 15px;
+
+  color: #f5f5f5;
+}
+
+.how-box p {
+  margin: 8px 0;
+
+  color: #999;
+
+  font-size: 13px;
+}
+
+.close-how {
+  position: absolute;
+
+  top: 12px;
+  right: 15px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #777;
+
+  font-size: 24px;
+
+  cursor: pointer;
+}
+
+.close-how:hover {
+  color: #ffaf02;
+}
+
+.get-started-container.hide{
+  display: none;
+}
+
+
+.settings-sidebar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100dvh;
+  width:100dvh ;
+  max-width: 150px;
+  background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transform: translateX(-100%);
+
+}
+
+.settings-sidebar.show{
+    transform: translateX(0);
+
+}
+
+.settings-header{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: transparent;
+  background: linear-gradient(rgb(247, 158, 5));
+  background-clip: text;
+}
+
+.settings-section{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.settings-section h3{
+  color: transparent;
+  background: linear-gradient(rgb(228, 118, 7), rgb(248, 127, 5));
+  background-clip: text;
+}
+
+.settings-section p{
+    margin-left: 10px;
+  }
+
+
+.settings-section button{
+  width: fit-content;
+  margin: 0;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+ background: linear-gradient(
+    135deg,
+    rgba(233, 233, 236, 0.35),
+    rgba(0, 0, 0, 0.25)
+);
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: #fafafa;
+}
+
+.settings-section button:hover{
+transform: translateY(-3px);
+}
+
+
+
+
+.confirm-popup{
+    background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+     max-width:300px;
+    padding: 10px;
+   display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 10px;
+    height: 200px;
+    position: fixed;
+    left: 15%;
+    top: 30%;
+     justify-content: center;
+     align-items: center;
+     display: none;
+}
+
+.confirm-popup.show{
+  display: flex;
+}
+
+
+.confirm-popup button{
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: black;
+    background: transparent;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.confirm-popup button:active{
+transform: translateY(-3px);
+box-shadow: 0 0 5px rgba(255, 255, 255, 0.18);
+}
+
+.confirm-popup button:hover{
+transform: translateY(-3px);
+box-shadow: 0 0 5px rgba(255, 255, 255, 0.18);
+background-color: black;
+}
+
+
+.confirm-popup #btn-yes-color{
+  background-color: red;
+}
+
+
+.gcash{
+  color: #482ce7;
+}
+.maya{
+  color: rgb(9, 233, 125);
+}
+
+
+
+.footer {
+   position: fixed; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 5px;
+}
+
+.footer p {
+  font-size: 0.75rem;
+
+  color: transparent;
+
+  background: linear-gradient(white, black);
+
+  background-clip: text;
+}
+
+
+}
+
+
+@media (max-width:400px) {
+
+  .heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.h2{
+ padding: 10px;
+  background-color: rgb(45, 165, 9);
+  border: none;
+  border-radius: 100px 1px;
+  color: white;
+  box-shadow: 0 7px 0 rgb(1, 53, 1);
+  position: relative;
+  margin: 10px;
+}
+
+/* .h2::after{
+  content: "";
+  border-bottom: 1px solid rgb(45, 165, 9);
+  border-left: 1px solid rgb(45, 165, 9);
+  border-right: 1px solid rgb(45, 165, 9);
+  height: 5px;
+  width: 50%;
+  position: absolute;
+  background-color: rgb(45, 165, 9);
+  top: 0;
+  right: -40px;
+
+} */
+
+.heading h2 {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  margin: 10px;
+ 
+}
+
+.heading nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 0;
+
+}
+
+.heading a{
+    background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+    color: rgb(108, 105, 105);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+     padding: 5px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.heading a:active{
+  box-shadow: 0 0 20px rgb(108, 105, 105);
+  transform: translateY(-3px);
+}
+
+.heading img{
+  width: 90px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgb(214, 101, 1);
+}
+
+.money-container{
+   background-image:
+    linear-gradient(
+      rgba(1, 1, 26, 0.78),
+      rgba(5, 5, 5, 0.94)
+    ),
+    url("img/thedigitalartist-business-8256837_1920.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 10px;
+  min-height: 100dvh;
+  width: 100%;
+  max-width: 550px;
+  position: relative;
+
+}
+
+.title{
+  font-size: 2rem;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.total-cash-container{
+  border: none;
+    background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+    color: rgb(171, 169, 169);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  border-radius: 1rem;
+  min-height: 140px;
+}
+
+.total-cash-container p{
+  color: #d2cccc;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.total-cash-container h2{
+  font-size: 2rem;
+}
+
+/* ................ */
+
+.bank-card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top:10px ;
+
+}
+
+.card{
+  width: 100%;
+  height: 100px;
+  border: none;
+  border-radius: 1rem;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.card:active{
+  transform: translateY(-3px);
+}
+
+.card-name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gcash-icon{
+   width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #2107b2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.chip{
+  position: absolute;
+  top: 25px;
+  left: -2px;
+  font-size: 8px;
+}
+
+
+
+.chip img{
+  width: 60px;
+ 
+}
+
+.chip-span {
+color: #a19d9d;
+position: absolute;
+top: 55px;
+left: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  
+}
+
+.card span{
+  font-size: 12px;
+   margin-bottom: 10px;
+
+}
+
+
+
+.gcash-box{
+  background: #120c36;
+  border-radius: 20px;
+  margin-top: 2.5rem;
+  text-align: center;
+
+}
+
+
+
+
+
+.add-bank-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+} 
+
+.add-bank-btn button{
+  /* padding: 6px;
+   background: linear-gradient(rgb(88, 38, 2), rgb(246, 97, 4));
+  border: none;
+  font-size: 12px;
+  border-radius: 1px 100px;
+  color: rgb(251, 251, 251);
+  box-shadow: 0 3px 0 rgb(245, 119, 1);
+  position: relative; */
+    background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+    color: rgb(171, 169, 169);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+     padding: 5px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    font-size: 1.2rem;
+}
+
+/* .add-bank-btn button::before{
+  content: "";
+  position: absolute;
+  
+  border-bottom: 1px solid rgb(45, 165, 9);
+  border-top: 1px solid rgb(45, 165, 9);
+  border-left: 1px solid rgb(45, 165, 9);
+  background: rgb(45, 165, 9);
+  top: 0;
+  right: -30px;
+  height: 3px;
+  width: 30%;
+} */
+
+.gcash-card{
+background: #1b0d6c;
+transition: 0.3s ease-in-out;
+cursor: pointer;
+}
+
+.gcash-card:hover{
+transform: translateY(-3px);
+box-shadow: 0 0 5px #280bcd;
+}
+
+ .gcash-card:active{
+  transform: translateY(-3px);
+  box-shadow: 0 0 5px  #443597;  
+} 
+
+
+
+
+.maya-card {
+  background: linear-gradient(rgb(19, 19, 19), rgb(6, 6, 6));
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.maya-card:hover{
+   box-shadow: 0 2px 10px rgb(13, 151, 98);
+   transform: translateY(-3px);
+}
+
+ .maya-card:active{
+   box-shadow: 0 2px 10px rgb(13, 151, 98);
+   transform: translateY(-3px);
+} 
+
+
+.maya-card p {
+  color: rgb(13, 151, 98);
+  font-weight: bold;
+}
+
+.maya-icon{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgb(3, 75, 47);
+  text-align: center;
+}
+
+.maya-box{
+  background-color: rgb(2, 23, 15);
+  border-radius: 20px;
+margin-top: 2.5rem;
+  text-align: center;
+  
+}
+
+
+
+.maya-card .maya-p{
+  font-size: 10px;
+  color: white;
+}
+
+ .maya-chip{
+  position: absolute;
+  left: 2px;
+  top: 30px;
+
+} 
+
+.maya-chip img{
+  width: 60px;
+}
+.display-maya{
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  font-size: 3rem;
+  opacity: .2;
+  font-weight: bold;
+}
+
+
+.maribank-card{
+  background: linear-gradient( rgb(251, 88, 0),orange, rgb(244, 71, 2));
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.maribank-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px orangered;
+}
+
+.maribank-p-div{
+  height: 30px;
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.maribank-p-div span {
+ align-items: center;
+ margin-top: 5px;
+ border: 1px solid orange;
+ border-radius: 50%;
+ height:  20px;
+ width: 20px;
+ padding: 2px;
+ color: orangered;
+ background-color: white;
+
+ 
+}
+
+ .maribank-logo{
+    position: absolute;
+    bottom: 30px;
+    text-spacing-trim: 1rem;
+    font-size: 1.5rem;  
+    text-shadow: 0 3px 0 black;
+     letter-spacing:4px ;
+} 
+
+
+.maribank-box{
+  position: absolute;
+  bottom: 2px;
+  left: 7px;
+  width: 90%;
+  border-radius: 20px;
+  background-color: rgb(184, 34, 3);
+   text-align: center;
+
+}
+
+
+
+
+
+ .gotyme-card{
+ background: linear-gradient(180deg, black, rgb(75, 217, 227));
+ cursor: pointer;
+ transition: 0.3s ease-in-out;
+} 
+
+.gotyme-card:hover{
+  box-shadow: 0 0 20px rgb(75, 217, 227);
+  transform: translateY(-3px);
+}
+
+.wifi-icon {
+  transform: rotate(90deg);
+  
+}
+
+
+.gotyme-chip{
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+
+.gotyme-chip img{
+  width: 60px;
+}
+
+.display-gotyme {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  color: rgb(1, 41, 44);
+  text-shadow: 0 2px 0 rgb(12, 10, 26);
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+
+  
+}
+
+.gotyme-box{
+  background-color:rgb(1, 41, 44);
+  border-radius: 20px;
+  margin-top: 2.9rem;
+   text-align: center;
+}
+
+
+
+
+.tonik-card{
+  background: linear-gradient(to right, rgb(67, 3, 156),rgb(102, 5, 239) );
+  cursor: pointer;
+  transition: 3s ease-in-out;
+}
+
+.tonik-card:hover{
+  box-shadow: 0 0 20px rgb(102, 5, 239) ;
+  transform: translateY(-3px);
+}
+
+.tonik-card span{
+  font-size: 12px;
+}
+
+.circle{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 5px;
+  bottom: 40px;
+}
+.circle-left{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.circle-right{
+  position: absolute;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: orange;
+  
+}
+
+.tonik-box{
+  border-radius: 20px;
+  background-color: #231d48;
+  margin-top: 2.9rem;
+   text-align: center;
+}
+
+
+
+
+.cash-card{
+  background: linear-gradient(135deg, green, black);
+  cursor: pointer;
+  transition: 3s ease-in-out;
+}
+
+.cash-card:hover{
+  transform: translateY(-3px);
+
+}
+.money-img{
+  position: absolute;
+  top: 15px;
+  left: 50px;
+ 
+}
+.money-img img{
+  width: 60px;
+
+}
+
+.cash-box{
+  margin-top: 2.9rem;
+  border-radius: 20px;
+  background-color: rgb(4, 60, 4);
+  text-align: center;
+
+}
+
+.cash-box h2,
+.gcash-box h2,
+.maya-box h2,
+.tonik-box h2,
+.maribank-box h2,
+.gotyme-box h2{
+  font-size: 12px;
+}
+
+
+
+
+/* Pop up */
+
+.popup-container{
+  width: 100%;
+  max-width:350px;
+  color: white;
+  background-image:
+    linear-gradient(
+      rgba(1, 1, 26, 0.78),
+      rgba(5, 5, 5, 0.94)
+    ),
+    url("img/thedigitalartist-finance-8045002_1920.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 10px 20px;
+  flex-direction: column;
+  position: fixed;
+  left: 5.5%;
+  top: 10%;
+  
+  
+}
+
+.img-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.img-logo img{
+  width: 80px;
+    border: none;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgb(214, 101, 1);
+}
+
+
+
+.popup-header{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.popup-header h2, .popup-header span{
+  padding: 5px;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.popup-header span{
+  font-size: 1rem;
+}
+
+.balance-section-label{
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-balance{
+  border: none;
+  background-color: white;
+  padding: 10px 30px;
+  color: #777;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.edit-balance:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgb(207, 206, 205);
+    background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+;
+  
+  
+}
+
+.edit-balance:active{
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgb(191, 190, 190);
+    background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+      color: #d2cccc;
+}
+
+
+/*  */
+
+.popup-container-label{
+  color: #777;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.popup-container input{
+ 
+  border: 1px solid gray;
+   padding: 10px ;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.popup-container input:focus{
+  border-color: rgb(235, 125, 8);
+}
+
+
+
+.btn {
+  display: flex;
+  justify-content: right;
+  gap: 1.5rem;
+  margin: 10px;
+}
+
+.btn button{
+  padding: 10px ;
+  border-radius: 10px;
+  border: none;
+}
+
+.cancel{
+  
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.cancel:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgb(246, 139, 9);
+   background: linear-gradient(rgb(175, 112, 4), black);
+}
+
+.save{
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.save:hover{
+   transform: translateY(-3px);
+  box-shadow: 0 0 20px rgb(246, 139, 9);
+   background: linear-gradient(rgb(175, 112, 4), black);
+}
+
+
+.divider{
+  border-bottom: 1px solid red;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.popup-container{
+  display: none;
+}
+
+.popup-container.show{
+  display: flex;
+}
+
+
+
+/* @media(max-width: 600px) { */
+  .history-container{
+    min-height: 100dvh;
+    width: 100%;
+    max-width: 550px;
+    padding: 10px;
+    background-image:
+    linear-gradient(
+      rgba(5, 5, 5, 0.78),
+      rgba(5, 5, 5, 0.94)
+    ),
+    url("img/global_intergold-gold-is-money-2020767_1920.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    color: #777;
+    display: none;
+  }
+
+.heading-history{
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  box-shadow:  inset 0 1px rgba(255, 255, 255, 0.04);
+   font-size: 15px;
+}
+
+.heading-history span{
+  margin-top: 3px;
+}
+
+.dropdown-menu{
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: #777;
+
+}
+.dropdown-menu:hover{
+  transform: translateY(-3px);
+
+}
+
+
+
+.thead tr{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%; 
+  padding: 10px;
+  margin-top: 10px;
+  background: rgba(15, 15, 15, 0.92); 
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  box-shadow:  inset 0 1px rgba(255, 255, 255, 0.04);
+   font-size: 13px;
+}
+
+#history-body tr{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%; 
+  padding: 10px;
+  margin-top: 5px;
+  
+  background: rgba(15, 15, 15, 0.92); 
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 13px;
+  box-shadow:  inset 0 1px rgba(255, 255, 255, 0.04);
+ font-size: 13px;
+}
+
+#history-body tr td{
+  text-align: center;
+}
+
+
+
+
+.history-container{
+  display: none;
+}
+.history-container.show{
+  display: block;
+}
+
+
+.money-container{
+  display: none;
+}
+
+ .money-container.show{
+  display: block;
+} 
+
+nav a{
+  cursor: pointer;
+  transition: 0.3s ease;
+  
+}
+
+nav a:active{
+  border: 1px solid rgb(233, 165, 116);
+   border: 1px solid rgb(236, 122, 8);
+  border-radius: 10px;
+  padding: 5px; 
+}
+
+
+/* } */
+
+.maribank{
+  color: rgb(249, 118, 70);
+}
+
+.get-started-container{
+  width: 100%;
+  min-height: 100dvh;
+  background-image:
+    linear-gradient(
+      rgba(1, 1, 26, 0.78),
+      rgba(5, 5, 5, 0.94)
+    ),
+    url("img/thedigitalartist-business-8256837_1920.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.name-title h2{
+  margin-top: 2rem;
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(220, 220, 220);
+  text-shadow: 0 0 8px rgb(230, 148, 7);
+  font-weight: bold;
+}
+
+.name-title p{
+  font-style: italic;
+  color: rgb(232, 168, 6);
+  
+}
+
+.faq{
+ position: absolute;
+ right: 10px;
+ top: 10px;
+}
+
+.how-btn{
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  border: 1px solid #d2cccc;
+  color: #d2cccc;
+  background: transparent;
+
+}
+
+.img-home img{
+  width: 250px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgb(214, 101, 1);
+}
+
+.img-home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+/* .center-text{
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left;
+} */
+.text {
+     width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  margin-top: 1.5rem;
+  color: #777;
+  line-height: 1.5;
+}
+
+
+.get-started-btn {
+  margin-top: 1.3rem;
+}
+
+#get-started{
+  padding: 10px 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  color: rgb(186, 122, 4);
+  background-color: black;
+}
+
+.section-label{
+  color: rgb(202, 133, 5);
+}
+
+.how-modal {
+  display: none;
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 1000;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.how-modal.show {
+  display: flex;
+}
+
+.how-box {
+  position: relative;
+
+  width: 100%;
+  max-width: 350px;
+
+  padding: 25px 20px;
+
+  background: #111;
+
+  border: 1px solid rgba(200, 103, 7, 0.2);
+
+  border-radius: 18px;
+
+  text-align: left;
+}
+
+.how-box h3 {
+  margin: 8px 0 15px;
+
+  color: #f5f5f5;
+}
+
+.how-box p {
+  margin: 8px 0;
+
+  color: #999;
+
+  font-size: 13px;
+}
+
+.close-how {
+  position: absolute;
+
+  top: 12px;
+  right: 15px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #777;
+
+  font-size: 24px;
+
+  cursor: pointer;
+}
+
+.close-how:hover {
+  color: #ffaf02;
+}
+
+.get-started-container.hide{
+  display: none;
+}
+
+
+.settings-sidebar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100dvh;
+  width:100dvh ;
+  max-width: 150px;
+  background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transform: translateX(-100%);
+
+}
+
+.settings-sidebar.show{
+    transform: translateX(0);
+
+}
+
+.settings-header{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: transparent;
+  background: linear-gradient(rgb(247, 158, 5));
+  background-clip: text;
+}
+
+.settings-section{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.settings-section h3{
+  color: transparent;
+  background: linear-gradient(rgb(228, 118, 7), rgb(248, 127, 5));
+  background-clip: text;
+}
+
+.settings-section p{
+    margin-left: 10px;
+  }
+
+
+.settings-section button{
+  width: fit-content;
+  margin: 0;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+ background: linear-gradient(
+    135deg,
+    rgba(233, 233, 236, 0.35),
+    rgba(0, 0, 0, 0.25)
+);
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: #fafafa;
+}
+
+.settings-section button:hover{
+transform: translateY(-3px);
+}
+
+
+
+
+.confirm-popup{
+    background: linear-gradient(
+    135deg,
+    rgba(60, 58, 70, 0.35),
+    rgba(20, 20, 28, 0.25)
+);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+     max-width:300px;
+    padding: 10px;
+   display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 10px;
+    height: 200px;
+    position: fixed;
+    left: 15%;
+    top: 30%;
+     justify-content: center;
+     align-items: center;
+     display: none;
+}
+
+.confirm-popup.show{
+  display: flex;
+}
+
+
+.confirm-popup button{
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: black;
+    background: transparent;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.confirm-popup button:active{
+transform: translateY(-3px);
+box-shadow: 0 0 5px rgba(255, 255, 255, 0.18);
+}
+
+.confirm-popup button:hover{
+transform: translateY(-3px);
+box-shadow: 0 0 5px rgba(255, 255, 255, 0.18);
+background-color: black;
+}
+
+
+.confirm-popup #btn-yes-color{
+  background-color: red;
+}
+
+
+.gcash{
+  color: #482ce7;
+}
+.maya{
+  color: rgb(9, 233, 125);
+}
+
+
+
+.footer {
+   position: fixed; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 5px;
+}
+
+.footer p {
+  font-size: 0.75rem;
+
+  color: transparent;
+
+  background: linear-gradient(white, black);
+
+  background-clip: text;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GCash
+Maya
+GoTyme
+CIMB
+Tonik
+UnionDigital
+UNO
+MariBank */
